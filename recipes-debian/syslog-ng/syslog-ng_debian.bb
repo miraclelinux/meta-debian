@@ -12,7 +12,8 @@ require recipes-debian/sources/syslog-ng.inc
 DEBIAN_UNPACK_DIR = "${WORKDIR}/syslog-ng-syslog-ng-${PV}"
 
 LICENSE = "GPL-2.0-with-OpenSSL-exception & LGPL-2.1-with-OpenSSL-exception"
-LIC_FILES_CHKSUM = "file://COPYING;md5=24c0c5cb2c83d9f2ab725481e4df5240"
+LIC_FILES_CHKSUM = "file://debian/copyright;md5=896b5aaa7720190a36f9383f1874258e"
+NO_GENERIC_LICENSE[LGPL-2.1-with-OpenSSL-exception] = "debian/copyright"
 
 SRC_URI += " \
     file://configure.ac-add-option-enable-thread-tls-to-manage-.patch \
